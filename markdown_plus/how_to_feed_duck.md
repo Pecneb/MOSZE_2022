@@ -69,7 +69,7 @@ def feed_the_ducks(trough: object):
 
 ## Honorable mentions
 
-I prefer feeding my ducks ==manually==, it is more personal and I see happy ducks everyday. Altough it is very confy when you dont have to feed your ducks all day. But with ducks, interaction is key.
+I prefer feeding my ducks manually, it is more personal and I see happy ducks everyday. ~~Altough it is very confy when you dont have to feed your ducks all day.~~ But with ducks, interaction is key.
 
 ## Reminder
 
