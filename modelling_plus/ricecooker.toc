@@ -1,0 +1,10 @@
+\babel@toc {nil}{}\relax 
+\contentsline {section}{\numberline {1}Description}{3}{}%
+\contentsline {section}{\numberline {2}Use cases}{3}{}%
+\contentsline {section}{\numberline {3}Requirements}{4}{}%
+\contentsline {section}{\numberline {4}Machine Structure}{4}{}%
+\contentsline {subsubsection}{\numberline {4.0.1}Components}{4}{}%
+\contentsline {section}{\numberline {5}Behaviour}{5}{}%
+\contentsline {subsubsection}{\numberline {5.0.1}StateMachine}{5}{}%
+\contentsline {subsubsection}{\numberline {5.0.2}Sequences}{6}{}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

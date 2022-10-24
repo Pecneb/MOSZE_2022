@@ -1,0 +1,27 @@
+@startuml UseCase
+
+package Cooker << Machine >>{
+    usecase Quick_rice
+    usecase White_rice
+    usecase Brown_rice
+    usecase Pouridge
+    usecase Soup
+    usecase Steam
+    usecase Rice_and_Vegetables
+    note right of Rice_and_Vegetables: The cooking of rice and vegetables at the same time is possible,\nbecause of the plastic backet, that comes with the cooker.
+}
+
+actor User << Human >>
+
+User --> Quick_rice
+User --> White_rice 
+User --> Brown_rice 
+User --> Pouridge 
+User --> Soup 
+User --> Steam 
+
+Quick_rice ..> Rice_and_Vegetables : include
+White_rice ..> Rice_and_Vegetables : include
+Brown_rice ..> Rice_and_Vegetables : include
+
+@enduml

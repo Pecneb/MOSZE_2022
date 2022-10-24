@@ -1,0 +1,29 @@
+@startuml Component 
+
+package Physical {
+    component Rice_Cooker_Unit
+    component Rice_and_Water_measuring_Cup
+    component Stirring_Spoon
+    component Ladle
+    component Removable_inner_Bowl
+    component Control_Panel
+    component DigitalDisplay
+}
+
+interface Physical_to_NonPhysical_Interface
+
+package Software {
+    component White_Rice
+    component Steam
+    component Soup
+    component Brown_Rice
+    component Quick_Rice
+    component Oat_Meal
+    component Start
+}
+
+Control_Panel .up.> Physical_to_NonPhysical_Interface
+Physical_to_NonPhysical_Interface .down. Software : PressButton
+Physical_to_NonPhysical_Interface .down.> DigitalDisplay : ShowStatus
+
+@enduml

@@ -1,0 +1,44 @@
+@startuml Sequence
+
+actor User
+participant Hardware
+participant Software 
+
+User --> Hardware: plug_in_powercord
+Hardware --> Software: Boot_Up
+Software --> Hardware: Send_status()
+Hardware --> User: Show_status_on_display
+User --> Hardware: Press_program_button
+Hardware --> Software: Load_program_into_memory()
+
+alt program_requires_timer_input 
+
+    Software --> Hardware: Send_timer_input_request()
+    Hardware --> User: Show_timer_request
+    User --> Hardware: Input_time_parameter
+    Hardware --> Software: Store_time_parameter()
+
+end
+
+User --> Hardware: Press_Start_Button
+Hardware --> Software: Start_cooking_program()
+
+loop Monitor_Cooking
+
+    Software --> Hardware: Send_status()
+    Hardware --> User: Show_status
+
+end
+
+Software --> Hardware: Send_cooking_finished()
+Software --> Hardware: Stop_cooking_program()
+Hardware --> User: Sound_alarm 
+Software --> Hardware: Keep_Warm()
+User --> Hardware: Press_Stop_program
+Hardware --> Software: Stop_Keep_Warm()
+Software --> Hardware: Send_status()
+Hardware --> User: Show_status()
+User --> Hardware: Pull_out_powercord
+Hardware --> Software: Boot_Down
+
+@enduml

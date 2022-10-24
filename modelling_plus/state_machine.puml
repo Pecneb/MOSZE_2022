@@ -1,0 +1,18 @@
+@startuml StateMachine
+
+[*] --> Off
+Off : Powered down state of the machine.
+Off --> On : Plug_in_powercord
+On : Powered on state of the machine.
+On : Choose cooking program.
+On --> Load_Program : Press_program_button
+Load_Program --> Cooking : Press_Start_Button
+Load_Program : Cooker isnt started program yet, \nbut the program is loaded into the memory.
+Cooking : Running cooking program.
+Cooking --> KeepWarm : Cooking_program_finished
+KeepWarm : Keeps the food warm.
+KeepWarm --> On : Press_keep_warm_button
+On --> Off : Pull_out_powercord
+Off --> [*]
+
+@enduml
