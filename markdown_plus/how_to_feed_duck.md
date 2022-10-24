@@ -6,6 +6,9 @@
 
 This is a guide, how to feed your **ducks**. If you follow the instructions below, the results will be happy **ducks**.
 
+## Duckscription
+
+> The domestic duck or domestic mallard (Anas platyrhynchos domesticus) is a subspecies of mallard that has been domesticated by humans and raised for meat, eggs, and down feathers. A few are also kept for show, as pets, or for their ornamental value. Almost all varieties of domesticated ducks, apart from the domestic Muscovy duck (Cairina moschata), are descended from the mallard. [[1]](#1)
 
 ## Feeding manually
 
@@ -23,6 +26,8 @@ This is a guide, how to feed your **ducks**. If you follow the instructions belo
 3. Shake the bucket to get the attention of the ducks.
 4. Pour the grain in the trough.
 5. While the ducks attack the trough, pinch little breadpieces, then throw it in the trough.
+
+![Duck feeding bucket](duckbucket.jpeg)
 
 ## Automatized feeding
 
@@ -89,4 +94,4 @@ Where $d_i$ is the duck, $g$ is the grain constant, $b$ is the bread constant, $
 
 ## References
 
-[Wikipedia page of ducks](https://en.wikipedia.org/wiki/Domestic_duck)
+<a id="1">[1]</a> [Wikipedia page of ducks](https://en.wikipedia.org/wiki/Domestic_duck) 
