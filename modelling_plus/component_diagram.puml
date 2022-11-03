@@ -1,29 +1,118 @@
 @startuml Component 
 
-package Physical {
-    component Rice_Cooker_Unit
+package Tools {
+    component Steaming_Basket
     component Rice_and_Water_measuring_Cup
     component Stirring_Spoon
     component Ladle
-    component Removable_inner_Bowl
-    component Control_Panel
-    component DigitalDisplay
+}
+component Rice_Cooker_Unit {
+    port Unit_Power_Inlet
+    port Lid
+    interface Power_Distributor
+    interface Unit_Circuit_Connection_Cables
+    component Circuit_Board {
+        interface Bus
+        port Connection_Ports 
+        component Memory {
+            port Memory_Connection
+            interface MemoryBus
+            component White_Rice_Program
+            component Steam_Program
+            component Soup_Program
+            component Brown_Rice_Program
+            component Quick_Rice_Program
+            component Oat_Meal_Program
+            component Start_Action
+            component Stop_Action
+            component Keep_Warm_Program
+        }
+        component CPU {
+            port CPU_Connection
+        }
+    }
+    component Removable_inner_Bowl {
+        port Conduction_Panel
+    }
+    component Control_Panel {
+        port Connection_Pins
+        interface Control_Panel_Connection_Cables
+        component Quick_Rice
+        component White_Rice
+        component Brown_Rice
+        component Manual
+        component Steam
+        component Oat_Meal
+        component Soup
+        component Start
+        component Stop
+        component "+" as plus
+        component "-" as minus
+        component Keep_Warm
+    }
+    component DigitalDisplay {
+        port Display_Connection_Pins
+    }
+        component White_Rice
+        component Steam
+        component Soup
+        component Brown_Rice
+        component Quick_Rice
+        component Oat_Meal
+        component Start
+    component Conduction_Heater {
+        port Heater_Power_Inlet
+    }
 }
 
-interface Physical_to_NonPhysical_Interface
-
-package Software {
-    component White_Rice
-    component Steam
-    component Soup
-    component Brown_Rice
-    component Quick_Rice
-    component Oat_Meal
-    component Start
+component Power_Cord {
+    portin Connector
+    portout Inlet
 }
 
-Control_Panel .up.> Physical_to_NonPhysical_Interface
-Physical_to_NonPhysical_Interface .down. Software : PressButton
-Physical_to_NonPhysical_Interface .down.> DigitalDisplay : ShowStatus
+Connector -up-> Wall_Powe_Outlet
+Inlet -down-> Unit_Power_Inlet
+
+Connection_Pins -up- Control_Panel_Connection_Cables 
+Unit_Circuit_Connection_Cables - Connection_Ports 
+Connection_Pins -up- Unit_Circuit_Connection_Cables
+Display_Connection_Pins -up- Unit_Circuit_Connection_Cables
+
+Quick_Rice -down- Control_Panel_Connection_Cables
+White_Rice -left- Control_Panel_Connection_Cables
+Brown_Rice -down- Control_Panel_Connection_Cables
+Oat_Meal -up- Control_Panel_Connection_Cables
+Soup -up- Control_Panel_Connection_Cables
+Steam -up- Control_Panel_Connection_Cables
+Manual -up- Control_Panel_Connection_Cables
+Start -down- Control_Panel_Connection_Cables
+Stop - Control_Panel_Connection_Cables
+Keep_Warm - Control_Panel_Connection_Cables
+plus - Control_Panel_Connection_Cables
+minus - Control_Panel_Connection_Cables
+
+Power_Distributor - Unit_Power_Inlet 
+Power_Distributor -down- Heater_Power_Inlet
+Power_Distributor - Unit_Circuit_Connection_Cables
+
+Bus - Memory_Connection
+Bus -down- CPU_Connection
+Bus - Connection_Ports
+
+Conduction_Panel - Power_Distributor
+
+Tools -down- Lid
+Lid -Removable_inner_Bowl
+
+MemoryBus -down- Memory_Connection
+MemoryBus -down- White_Rice_Program
+MemoryBus -down- Quick_Rice_Program 
+MemoryBus -down- Brown_Rice_Program 
+MemoryBus -left- Steam_Program
+MemoryBus -left- Start_Action
+MemoryBus -right- Soup_Program
+MemoryBus -right- Stop_Action 
+MemoryBus -up- Keep_Warm_Program
+MemoryBus -up- Oat_Meal_Program
 
 @enduml

@@ -24,16 +24,16 @@ This is a model of a multifunctional rice cooker. This rice cooker have a digita
 \section{Use cases}
 \begin{table}[H] \centering
     \caption{Use cases}\label{tab:usecasetable}
-    \begin{tabular}{@{}ll@{}} \hline
-        \emph{Case} & \emph{Description}\\
-        1. Cook quick rice & Cook jasmin or other quick rice types in 10-15 minutes.\\
-        2. Cook white rice & Cook normal rice in 45-60 minuntes.\\
-        3. Cook brown rice & Cook brown rice in 45 minutes.\\
-        4. Cook pouridge & Cook oatmeal in 10 minutes.\\
-        5. Cook soup & Cook soup.\\
-        6. Steam vegetables & Steam vegetables.\\
-        7. Cook rice and vegetables & Cook rice and cook vegetables at the same time.\\
-        8. Manual program & Set timer manually, how long the cooker should cook.
+    \begin{tabular}{@{}ll@{}ll@{}ll} \hline
+        \emph{Case} & \emph{Description} & \emph{Priority} \\
+        1. Cook quick rice & Cook jasmin or other quick rice types in 10-15 minutes. & High\\
+        2. Cook white rice & Cook normal rice in 45-60 minuntes. & High\\
+        3. Cook brown rice & Cook brown rice in 45 minutes. High\\
+        4. Cook pouridge & Cook oatmeal in 10 minutes. & Low\\
+        5. Cook soup & Cook soup. & Low\\
+        6. Steam vegetables & Steam vegetables. & Medium\\
+        7. Cook rice and vegetables & Cook rice and cook vegetables at the same time. & Medium\\
+        8. Manual program & Set timer manually, how long the cooker should cook. & High
     \end{tabular}
 \end{table}
 \begin{figure}[H]\centering
@@ -46,19 +46,19 @@ This is a model of a multifunctional rice cooker. This rice cooker have a digita
 \section{Requirements}
 \begin{table}[H] \centering
     \caption{Requirements}\label{tab:requirementstable}
-    \begin{tabular}{@{}ll@{}} \hline
-        \emph{Case} & \emph{Description}\\
-        Cook quick rice & Be able to cook jasmin or other quick rice types quicker.\\
-        Cook white rice & Have normal rice cooking program. \\
-        Cook brown rice & Have separate brown rice cooking program.\\
-        Cook pouridge & Have oatmeal cooking program that cooks oatmeal.\\
-        Cook soup & Have a soup cooking program that can cook soup with meat.\\
-        Steam vegetables & Have a steaming program that can make steamed vegetables.\\
-        Cook rice and vegetables & Be able to cook rice and cook vegetables at the same time.\\
-        Steam & Have a plastic basket for steaming vegetables.\\
-        Manual & Can set manually the cooking time.\\ 
-        Non-stick surface & The cooking bowl must have a non stick surface.\\
-        Plastic tools & Have plastic tools that comes with the rice cooker,\\ & ex.: stirring spoon, measuring cup, etc.
+    \begin{tabular}{@{}ll@{}ll@{}ll} \hline
+        \emph{Case} & \emph{Description} & \emph{Priority}\\
+        1. Cook quick rice & Be able to cook jasmin or other quick rice types quicker. & High\\
+        2. Cook white rice & Have normal rice cooking program. & High\\
+        3. Cook brown rice & Have separate brown rice cooking program. & High\\
+        4. Cook pouridge & Have oatmeal cooking program that cooks oatmeal. & Low\\
+        5. Cook soup & Have a soup cooking program that can cook soup with meat. & Low\\
+        6. Steam vegetables & Have a steaming program that can make steamed vegetables. & Medium\\
+        7. Cook rice and vegetables & Be able to cook rice and cook vegetables at the same time. & Medium\\
+        8. Steam & Have a plastic basket for steaming vegetables. & Medium\\
+        9. Manual & Can set manually the cooking time. & High\\ 
+        10. Non-stick surface & The cooking bowl must have a non stick surface. & High\\
+        11. Plastic tools & Have plastic tools that comes with the rice cooker, & High\\ & ex.: stirring spoon, measuring cup, etc.
     \end{tabular}
 \end{table}
 
@@ -81,5 +81,8 @@ This is a model of a multifunctional rice cooker. This rice cooker have a digita
     \includegraphics[width=0.65\columnwidth]{Sequence.png}
     \caption{sequence}\label{fig:4}
 \end{figure}
+
+\subsection{Behaviour Description}
+To power on the machine, the user have to plug in the power cable into the power outlet. To power off the machine, the user have to pull out the power cable from the power outlet. The digital display shows the status of the machine. To select the cooking program, press the button refering to it. If the program does not require timer input, press the Start button and the machine will start the cooking program immediately. If the cooking program requires timer input, then press the + or - button to add or subtract 5 minutes from the cooking time. When the cooking program is finished the machine will give five short sound signals, then switches into keep warm program. Keep Warm program can keep the food warm upto 8 hours. To disable Keep Warm state, press the Stop button. To take the food out of the cooking bowl, use the plastic ladle.
 
 \end{document}

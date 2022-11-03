@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.11)  24 OCT 2022 12:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.11)  3 NOV 2022 19:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -237,6 +237,10 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \openout3 = `ricecooker.toc'.
 
  [2]
+Overfull \hbox (35.83046pt too wide) in paragraph at lines 27--38
+ [][] 
+ []
+
 <UseCase.png, id=14, 875.27pt x 370.38374pt>
 File: UseCase.png Graphic file (type png)
 <use UseCase.png>
@@ -248,7 +252,7 @@ Overfull \hbox (41.8281pt too wide) in paragraph at lines 40--41
  []
 
 [3 <./UseCase.png (PNG copy)>]
-Overfull \hbox (4.11449pt too wide) in paragraph at lines 49--63
+Overfull \hbox (62.43149pt too wide) in paragraph at lines 49--63
  [][] 
  []
 
@@ -281,20 +285,20 @@ File: Sequence.png Graphic file (type png)
 <use Sequence.png>
 Package pdftex.def Info: Sequence.png  used on input line 81.
 (pdftex.def)             Requested size: 271.86356pt x 523.72354pt.
- [6 <./Sequence.png (PNG copy)>] (./ricecooker.aux) ) 
+ [6 <./Sequence.png (PNG copy)>] [7] (./ricecooker.aux) ) 
 Here is how much of TeX's memory you used:
- 6897 strings out of 475071
- 134339 string characters out of 5778915
- 614126 words of memory out of 5000000
- 28265 multiletter control sequences out of 15000+600000
- 478231 words of font info for 47 fonts, out of 8000000 for 9000
+ 6912 strings out of 475071
+ 134838 string characters out of 5778915
+ 615138 words of memory out of 5000000
+ 28279 multiletter control sequences out of 15000+600000
+ 479002 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,8n,106p,10681b,288s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx2074.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb>
-Output written on ricecooker.pdf (6 pages, 258085 bytes).
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx2074.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb>
+Output written on ricecooker.pdf (7 pages, 276895 bytes).
 PDF statistics:
- 58 PDF objects out of 1000 (max. 8388607)
- 33 compressed objects within 1 object stream
+ 68 PDF objects out of 1000 (max. 8388607)
+ 40 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

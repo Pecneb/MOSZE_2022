@@ -316,11 +316,13 @@ INPUT ./Sequence.png
 INPUT Sequence.png
 INPUT ./Sequence.png
 INPUT ./Sequence.png
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/ecsx1200.tfm
 INPUT ricecooker.aux
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx2074.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb
